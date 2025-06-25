@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Bill</title>
+</head>
+<body>
+    <h2>Generate Bill</h2>
+    
+    
+    <form action="addBill" method="post" onsubmit="disableButton()">
+    Customer ID: <input type="number" name="customerId" required><br>
+    Units Used: <input type="number" name="units" required><br>
+    <input type="submit" id="submitBtn" value="Generate Bill">
+</form>
+
+<script>
+    function disableButton() {
+        document.getElementById("submitBtn").disabled = true;
+        return true;
+    }
+</script>
+    
+    
+    
+    
+    <br>
+    <a href="index.html">Back to Home</a>
+</body>
+</html>
